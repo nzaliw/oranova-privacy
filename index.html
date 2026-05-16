@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de Confidentialité — Ora Nova</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --bg: #0A1628;
+    --surface: #0F1E35;
+    --card: #1A2E4A;
+    --primary: #38BDF8;
+    --primary-dim: rgba(56,189,248,0.12);
+    --text: #E2EAF4;
+    --muted: #7A9BB5;
+    --border: rgba(56,189,248,0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .logo-circle {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    background: var(--primary-dim);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--primary);
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 4px;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .badge {
+    display: inline-block;
+    margin-top: 16px;
+    background: var(--primary-dim);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-size: 12px;
+    color: var(--primary);
+    letter-spacing: 1px;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .last-updated {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .intro {
+    background: var(--primary-dim);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: var(--primary);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2::before {
+    content: '✦';
+    font-size: 14px;
+    opacity: 0.7;
+  }
+
+  p {
+    color: #B8CDE0;
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-weight: 300;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+
+  ul li {
+    color: #B8CDE0;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 6px 0 6px 22px;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '›';
+    position: absolute;
+    left: 6px;
+    color: var(--primary);
+    font-size: 16px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 16px;
+  }
+
+  .card p { margin-bottom: 0; }
+
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid rgba(56,189,248,0.3);
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center;
+    margin-top: 48px;
+  }
+
+  .contact-box h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .contact-box a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  strong { color: var(--text); font-weight: 500; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-circle">✦</div>
+  <h1>ORA NOVA</h1>
+  <p class="subtitle">Communauté Saint Benoît le Thaumaturge</p>
+  <span class="badge">Politique de Confidentialité</span>
+</header>
+
+<main>
+  <p class="last-updated">Dernière mise à jour : 16 mai 2026</p>
+
+  <div class="intro">
+    La Communauté Saint Benoît le Thaumaturge, dirigée par le Père Jean Emmanuel à Douala, Cameroun, s'engage à protéger la vie privée des utilisateurs de l'application <strong>Ora Nova</strong>. Cette politique explique comment nous collectons, utilisons et protégeons vos informations personnelles.
+  </div>
+
+  <section>
+    <h2>Informations que nous collectons</h2>
+    <p>Lors de l'utilisation de l'application Ora Nova, nous pouvons collecter les informations suivantes :</p>
+    <ul>
+      <li>Nom et prénom (lors de la création du compte)</li>
+      <li>Adresse email (pour l'authentification)</li>
+      <li>Token de notification push (pour les alertes de prière)</li>
+      <li>Contenu partagé volontairement (témoignages, demandes de prière)</li>
+      <li>Données d'utilisation de l'application (prières effectuées, Amen donnés)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Comment nous utilisons vos informations</h2>
+    <p>Vos informations personnelles sont utilisées exclusivement pour :</p>
+    <ul>
+      <li>Gérer votre compte et votre accès à l'application</li>
+      <li>Vous envoyer des notifications de prière et d'événements</li>
+      <li>Afficher votre profil dans la communauté</li>
+      <li>Calculer le classement des intercesseurs</li>
+      <li>Améliorer nos services spirituels</li>
+    </ul>
+    <div class="card">
+      <p><strong>Important :</strong> Nous ne vendons, ne louons et ne partageons jamais vos informations personnelles avec des tiers à des fins commerciales.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Stockage et sécurité des données</h2>
+    <p>Vos données sont stockées de manière sécurisée via <strong>Supabase</strong>, une plateforme de base de données conforme aux normes de sécurité internationales. Les mesures de protection incluent :</p>
+    <ul>
+      <li>Chiffrement des données en transit (SSL/TLS)</li>
+      <li>Chiffrement des données au repos</li>
+      <li>Authentification sécurisée</li>
+      <li>Accès restreint aux données personnelles</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notifications push</h2>
+    <p>L'application peut envoyer des notifications push pour :</p>
+    <ul>
+      <li>Les rappels d'heures de prière (psaumes)</li>
+      <li>Les annonces de directs spirituels</li>
+      <li>Les nouvelles publications du Père Jean Emmanuel</li>
+      <li>Les événements de la communauté</li>
+    </ul>
+    <p>Vous pouvez désactiver les notifications à tout moment dans les paramètres de votre appareil.</p>
+  </section>
+
+  <section>
+    <h2>Contenu audio et médias</h2>
+    <p>Les enregistrements audio (directs TikTok, prières, enseignements) sont hébergés sur des serveurs sécurisés. Ces contenus sont la propriété exclusive de la Communauté Saint Benoît le Thaumaturge et ne peuvent être reproduits sans autorisation.</p>
+  </section>
+
+  <section>
+    <h2>Partage de données</h2>
+    <p>Certaines informations sont visibles par d'autres membres de la communauté :</p>
+    <ul>
+      <li>Votre prénom dans le classement des intercesseurs</li>
+      <li>Vos témoignages publiés (si vous choisissez de les partager)</li>
+      <li>Vos demandes de prière (si vous les rendez publiques)</li>
+    </ul>
+    <p>Vous contrôlez entièrement ce que vous partagez dans la communauté.</p>
+  </section>
+
+  <section>
+    <h2>Protection des mineurs</h2>
+    <p>L'application Ora Nova n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès de mineurs de moins de 13 ans. Si vous êtes parent et pensez que votre enfant a fourni des données personnelles, contactez-nous immédiatement.</p>
+  </section>
+
+  <section>
+    <h2>Vos droits</h2>
+    <p>Conformément aux lois applicables sur la protection des données, vous avez le droit de :</p>
+    <ul>
+      <li>Accéder à vos données personnelles</li>
+      <li>Corriger des informations inexactes</li>
+      <li>Demander la suppression de votre compte et de vos données</li>
+      <li>Retirer votre consentement à tout moment</li>
+    </ul>
+    <div class="card">
+      <p>Pour exercer ces droits, contactez-nous à l'adresse indiquée ci-dessous. Nous répondrons dans un délai de 30 jours.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Modifications de cette politique</h2>
+    <p>Nous pouvons mettre à jour cette politique de confidentialité périodiquement. Les modifications importantes seront notifiées via l'application. La date de dernière mise à jour est indiquée en haut de ce document.</p>
+  </section>
+
+  <div class="contact-box">
+    <h3>Nous contacter</h3>
+    <p style="color:#7A9BB5; margin-bottom:12px;">Pour toute question relative à cette politique de confidentialité :</p>
+    <p><strong>Communauté Saint Benoît le Thaumaturge</strong></p>
+    <p>Père Jean Emmanuel</p>
+    <p>Douala, Cameroun</p>
+    <p style="margin-top:10px;">
+      <a href="mailto:nzaliwilly8@gmail.com">nzaliwilly8@gmail.com</a>
+    </p>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Communauté Saint Benoît le Thaumaturge — Douala, Cameroun</p>
+  <p style="margin-top:6px;">Application Ora Nova · com.oranova.app</p>
+</footer>
+
+</body>
+</html>
